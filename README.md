@@ -7,3 +7,9 @@ In this subdirectory are tools which I used to automate the generation of traini
 - generate_csv.py: requires that a file "ionic_comps.csv" and "outline.csv" are provided within the same sub directory. ionic_comps.csv is a csv file containing the compositions for which you want to generate data for. From there, the python script generates different ratios of these compositions at different relative humidities and temperatures, and stores them in files of the structure outline.csv, which can be interpreted by E-AIM. 
 - generate_data.py: This uses the previously generated csv files, which are in a sub directory titled "CSV's", from generate_csv.py and interacts with the E-AIM API to pass in each csv, and store the resulting output.
 
+### models
+- saved_models: Where the neural networks are stored, in h5 format, so that they can be used in the future.
+- model_code: Contains the code for the data processing, training, and analysis of each of the neural networks. 
+
+
+
